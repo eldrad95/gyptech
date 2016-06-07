@@ -1,0 +1,60 @@
+.Header {
+	padding: 25px;
+	padding-bottom: 50px;
+}
+
+.Usermenu {
+	float: right;
+	padding-right: 125px;
+
+}
+
+.UserMenuItem {
+	display: inline-block;
+	list-style-image : url("images/Account_Rest.png");
+
+}
+
+#Menu {
+		clear: both;
+	list-style: none;
+}
+
+.MenuItem {
+	background-color: #0065A5;
+	background: linear-gradient(#0083AF,#0C5179);
+	padding: 15px;
+	border-top :1px solid #999999;
+	border-bottom: 1px solid #999999;
+	align-content: center;
+	text-align: center;
+	color: white;
+	width: auto;
+	list-style-type: none;
+	display: inline-block;
+
+
+	
+}
+.MenuItem:hover {
+	background-color: #1A84BD;
+	background: #1A84BD;
+}
+li[class="MenuItem"] {
+	padding: 14px;
+}
+
+
+.searchbutton {
+	background: #989898 url("/images/search-btn.png") no-repeat scroll center; 
+	border:1px;
+	margin: 0px;
+	padding: 0px;
+	width:50;
+	height: 20;
+	outline: none;
+	
+}
+.searchbutton : hover {
+	background: #989898 url("/images/search-btnHover.png")
+}

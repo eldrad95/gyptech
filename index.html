@@ -1,0 +1,29 @@
+<meta http-equiv="X-UA-Compatible" content="IE=11" />
+<html lang='fr' ng-app="GyptechApp">
+	<head>
+		<script src="js/angular.min.js"></script>
+		<script src="js/GyptechuserMenu.js"></script>
+		<script src="js/gyptechMenu.js"></script>
+		<link rel="stylesheet" href="css/GyptechMenu.css">
+	</head>
+<body>
+<section class="Header">
+	<article>
+		<img src="images/logo-main.png" alt="" style="padding-left:30px">
+		<ul id="UserMenu" ng-controller="GyptechUserMenu" class="Usermenu">
+			<li ng-repeat="userMenuItem in userMenuItems" class="UserMenuItem">{{userMenuItem.title}}</li>
+		</ul>
+		<ul id="Menu" ng-controller="GyptechMenuCtrl">
+				<li ng-repeat="menuItem in menuItems" class="MenuItem">
+					{{menuItem.title}}
+				</li><li class="MenuItem"><input type="text"><input ng-controller="searchButton" type="button" data-img="search-btn" ng-style="searchHover" ng-mouseenter="changeSearchBg(true)" ng-mouseleave="changeSearchBg(false)" id="btnsearch" class="searchButton"></li>
+			</ul>
+	</article>
+</section>
+	<section>
+		<article>
+			
+		</article>
+	</section>
+</body>
+</html>

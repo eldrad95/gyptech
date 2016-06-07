@@ -1,0 +1,22 @@
+{"home":{
+	"title":"HOME"
+},
+"AboutUS":{
+	"title":"ABOUT US"
+},
+"Services" : {
+	"title" : "SERVICES"
+},
+"WHATSNEW":{
+	"title": "WHAT'S NEW"
+},
+"Careers":{
+	"title" : "CAREERS"
+},
+"CONTACTUS" :{
+	"title": "CONTACT US"
+},
+"SPARTPARTS":{
+	"title" : "SPARE PARTS & UPGRADES"
+}
+}
