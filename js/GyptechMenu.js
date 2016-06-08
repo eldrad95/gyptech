@@ -9,7 +9,7 @@ GyptechMenu.controller('GyptechMenuCtrl', ['$scope','$http', function($scope,$ht
 	});
 }])
 
-GyptechMenu.controller('searchButton', ['$scope','$attrs', function($scope,$attrs){
+GyptechApp.controller('onMouseHoverCtrl', ['$scope','$attrs', function($scope,$attrs){
 	$scope.changeBg = function(bool) {
 		if (bool == true) {
 			$scope.onMouseHover = {'background-image' : 'url("images/' + $attrs.img + 'Hover.png")'};
@@ -20,3 +20,8 @@ GyptechMenu.controller('searchButton', ['$scope','$attrs', function($scope,$attr
 	}
 }])
 
+GyptechMenu.controller('searchCell', ['$scope', function($scope){
+ $scope.focusOnClick = function() {
+ 	angular.element(event.currentTarget).find('input')[0].focus();
+ }
+}])
