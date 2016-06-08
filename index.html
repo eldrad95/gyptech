@@ -16,7 +16,7 @@
 		<ul id="Menu" ng-controller="GyptechMenuCtrl">
 				<li ng-repeat="menuItem in menuItems" class="MenuItem">
 					{{menuItem.title}}
-				</li><li class="MenuItem"><input type="text"><input ng-controller="onMouseHoverCtrl" type="button" data-img="search-btn" ng-style="onMouseHover" ng-mouseenter="changeBg(true)" ng-mouseleave="changeBg(false)" id="btnsearch" class="searchButton"></li>
+				</li><li  class="MenuItem" ng-controller="searchCell" ng-click="focusOnClick()"><input type="text"><input ng-controller="onMouseHoverCtrl" type="button" data-img="search-btn" ng-style="onMouseHover" ng-mouseenter="changeBg(true)" ng-mouseleave="changeBg(false)" id="btnsearch" class="searchButton"></li>
 			</ul>
 	</article>
 </section>
