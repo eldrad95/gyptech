@@ -11,12 +11,12 @@
 	<article>
 		<img src="images/logo-main.png" alt="" style="padding-left:30px">
 		<ul id="UserMenu" ng-controller="GyptechUserMenu" class="Usermenu">
-			<li ng-repeat="userMenuItem in userMenuItems" class="UserMenuItem">{{userMenuItem.title}}</li>
+			<li ng-controller="searchButton" ng-repeat="userMenuItem in userMenuItems" ng-style="onMouseHover" ng-mouseenter="changeBg(true)" data-img="{{userMenuItem.imageTitle}}"ng-mouseleave="changeBg(false)" class="UserMenuItem" style="background-image : url('/images/{{userMenuItem.imageTitle}}.png')">{{userMenuItem.title}}</li>
 		</ul>
 		<ul id="Menu" ng-controller="GyptechMenuCtrl">
 				<li ng-repeat="menuItem in menuItems" class="MenuItem">
 					{{menuItem.title}}
-				</li><li class="MenuItem"><input type="text"><input ng-controller="searchButton" type="button" data-img="search-btn" ng-style="searchHover" ng-mouseenter="changeSearchBg(true)" ng-mouseleave="changeSearchBg(false)" id="btnsearch" class="searchButton"></li>
+				</li><li class="MenuItem"><input type="text"><input ng-controller="searchButton" type="button" data-img="search-btn" ng-style="onMouseHover" ng-mouseenter="changeBg(true)" ng-mouseleave="changeBg(false)" id="btnsearch" class="searchButton"></li>
 			</ul>
 	</article>
 </section>

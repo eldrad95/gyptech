@@ -1,8 +1,10 @@
 {
 	"Activity" : {
-		"title":"Activity"
+		"title":"Activity",
+		"imageTitle": "Activity"
 	},
 	"Account" : {
-		"title" : "Account"
+		"title" : "Account",
+		"imageTitle" : "Account"
 	}
 }

@@ -7,3 +7,13 @@ GyptechUserMenu.controller('GyptechUserMenu', ['$scope', '$http', function($scop
 	});
 	
 }])
+
+GyptechUserMenu.controller('userMenuItem', ['$scope',function($scope){
+	$scope.changeImgSrc = function(bool) {
+		if (bool == true) 
+			$scope.ImageOver = { 'background-image' : 'url("images/' + $scope.userMenuItem.imageTitle + '_Active.png")'};
+		else if (bool = false) 
+			$scope.ImageOver = { 'background-image' : 'url("images/'+ $scope.userMenuItem.imageTitle + '_Rest.png")'}; 
+	}
+	
+}])

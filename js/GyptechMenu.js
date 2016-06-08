@@ -10,13 +10,13 @@ GyptechMenu.controller('GyptechMenuCtrl', ['$scope','$http', function($scope,$ht
 }])
 
 GyptechMenu.controller('searchButton', ['$scope','$attrs', function($scope,$attrs){
-	$scope.changeSearchBg = function(bool) {
-		$t = $attrs.img;
+	$scope.changeBg = function(bool) {
 		if (bool == true) {
-			$scope.searchHover = {'background-image' : 'url("images/' + $attrs.img + 'Hover.png")'};
+			$scope.onMouseHover = {'background-image' : 'url("images/' + $attrs.img + 'Hover.png")'};
 		}
 		else {
-			$scope.searchHover = {'background-image' : 'url("images/' + $attrs.img + '.png")'};
+			$scope.onMouseHover = {'background-image' : 'url("images/' + $attrs.img + '.png")'};
 		}
 	}
 }])
+

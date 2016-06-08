@@ -58,3 +58,9 @@ li[class="MenuItem"] {
 .searchbutton : hover {
 	background: #989898 url("/images/search-btnHover.png")
 }
+
+.UserMenuItem  {
+	padding-left: 30px;
+	padding-right: 15px;
+	background-repeat: no-repeat;
+}
